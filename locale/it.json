@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Ambienti mise",
+    "description": "Fissa la toolchain dei progetti con mise: ispeziona mise.toml e lo stato di trust, installa gli strumenti dichiarati (facoltativamente da mise.lock) ed esegue comandi e task nell'ambiente del progetto. Aggiunge i tool mise_status, mise_prepare e mise_run. L'installazione scrive nelle directory dati di mise e mise.lock viene creato o aggiornato solo quando una chiamata a `mise_prepare` lo richiede."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Mise environments",
+    "description": "Pins project toolchains with mise: inspects mise.toml and the trust state, installs the declared tools (optionally from mise.lock), and runs commands and tasks with the project's environment. Adds the mise_status, mise_prepare, and mise_run tools. Installations write to mise's own data directories, and mise.lock is only created or refreshed when a prepare call asks for it."
+  }
+}
