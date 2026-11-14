@@ -10,6 +10,8 @@
     "environment",
     "reproducible"
   ],
+  "author": "kele23",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kele23/dsh-mise.git"
@@ -18,10 +20,18 @@
   "bugs": {
     "url": "https://github.com/kele23/dsh-mise/issues"
   },
-  "private": true,
+  "engines": {
+    "dsh": ">=0.2.2-rc.3"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs",
+    "prepublishOnly": "node scripts/check.mjs"
+  },
   "type": "module",
   "exports": {
     ".": "./index.js",
+    "./package.json": "./package.json",
     "./locale/*.json": "./locale/*.json",
     "./icon": "./icon.svg"
   },
@@ -30,7 +40,8 @@
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "dsh": {
     "bundle": {

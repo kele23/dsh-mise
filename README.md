@@ -1,10 +1,14 @@
 # Mise environments
 
+[![CI](https://github.com/kele23/dsh-mise/actions/workflows/ci.yml/badge.svg)](https://github.com/kele23/dsh-mise/actions/workflows/ci.yml)
+
 A DeepSeek Harness bundle for projects whose toolchains are managed by [mise](https://mise.jdx.dev). It lets the agent inspect a project's `mise.toml`, install the pinned tools (optionally from `mise.lock`), and run commands and tasks inside that environment instead of relying on globally installed runtimes.
 
 ## Install
 
 Clone this repository, then in DeepSeek Harness open **Plugins** > **Add plugin** and select the cloned directory. The bundle adds the three tools globally and a short system-prompt section; it does not add a UI page.
+
+Once the first npm release is published, **Plugins** > **Add plugin** also accepts the package name `dsh-mise-env`. See [RELEASING.md](RELEASING.md) for the release process.
 
 Repository: <https://github.com/kele23/dsh-mise>
 
@@ -48,3 +52,7 @@ Add overrides to the **Mise environments** row in the profile's `cordis.patch.ym
 - `mise_run` does not replace `bash` for general shell work; it is for project commands that need the mise environment. Without a mise config it still applies the global mise environment.
 - This plugin creates or refreshes `mise.lock` only when `mise_prepare` is called with `lock: true`.
 - Commands are composed for POSIX shells (Linux and macOS). Windows PowerShell quoting is not implemented or verified.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
