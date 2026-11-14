@@ -8,7 +8,7 @@ A DeepSeek Harness bundle for projects whose toolchains are managed by [mise](ht
 
 Clone this repository, then in DeepSeek Harness open **Plugins** > **Add plugin** and select the cloned directory. The bundle adds the three tools globally and a short system-prompt section; it does not add a UI page.
 
-Once the first npm release is published, **Plugins** > **Add plugin** also accepts the package name `dsh-mise-env`. See [RELEASING.md](RELEASING.md) for the release process.
+Once the first npm release is published, **Plugins** > **Add plugin** also accepts the package name `dsh-mise-env`. Releases are published from GitHub Actions with npm trusted publishing (OIDC), without a stored npm token; see [RELEASING.md](RELEASING.md).
 
 Repository: <https://github.com/kele23/dsh-mise>
 
