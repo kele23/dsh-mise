@@ -10,6 +10,14 @@
     "environment",
     "reproducible"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kele23/dsh-mise.git"
+  },
+  "homepage": "https://github.com/kele23/dsh-mise#readme",
+  "bugs": {
+    "url": "https://github.com/kele23/dsh-mise/issues"
+  },
   "private": true,
   "type": "module",
   "exports": {

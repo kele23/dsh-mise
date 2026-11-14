@@ -2,6 +2,12 @@
 
 A DeepSeek Harness bundle for projects whose toolchains are managed by [mise](https://mise.jdx.dev). It lets the agent inspect a project's `mise.toml`, install the pinned tools (optionally from `mise.lock`), and run commands and tasks inside that environment instead of relying on globally installed runtimes.
 
+## Install
+
+Clone this repository, then in DeepSeek Harness open **Plugins** > **Add plugin** and select the cloned directory. The bundle adds the three tools globally and a short system-prompt section; it does not add a UI page.
+
+Repository: <https://github.com/kele23/dsh-mise>
+
 ## What it adds
 
 | Tool | Purpose |
